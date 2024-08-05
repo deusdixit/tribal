@@ -31,7 +31,7 @@ function PrimeTable({tribal}: { tribal: Tribal }) {
         enableMultiSort: false
     });
 
-    function icon(value) {
+    function icon(value : string | boolean) {
         if (value === "asc") {
             return <FontAwesomeIcon icon={faCircleChevronUp} opacity={25}></FontAwesomeIcon>
         } else if (value === "desc") {

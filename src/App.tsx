@@ -5,8 +5,6 @@ import {Chart as Chart2} from "react-chartjs-2"
 import {CategoryScale, ChartEvent, ChartTypeRegistry, LegendElement, LegendItem} from "chart.js";
 import Chart from "chart.js/auto"
 import {toDatapoints} from "./core/converter.ts";
-// import {Table} from "react-bootstrap";
-// import {useReactTable} from "@tanstack/react-table";
 import PrimeTable from "./PrimeTable.tsx";
 
 Chart.register(CategoryScale);
@@ -15,8 +13,6 @@ Chart.defaults.color = '#FFFFFF'
 
 function App() {
     const [tribal, setTribal] = useState(new Tribal(""));
-    // const modulos: number[] = [3, 5, 7, 11, 13, 17, 19, 23];
-    // const table = useReactTable(options);
     const chartPlugins = {
         legend: {
             onClick(_ : ChartEvent, legendItem: LegendItem, legend: LegendElement<keyof ChartTypeRegistry>) {
